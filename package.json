@@ -1,0 +1,23 @@
+{
+  "name": "api-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test --project=staging --trace=on",
+    "test1": "EMAIL=heerasingh.mca07@gmail.com PASS=conduit123 DEV='1' npx playwright test --project=staging --trace=on",
+    "test2": "npx playwright test --project=staging --trace=on",
+    "test4": "npx playwright test --project=staging --trace=on --grep='@smoke|@regression'",
+    "test3": "EMAIL=heerasingh.mca07@gmail.com PASS=conduit123 npx playwright test --project=staging --trace=on --config=playwright.staging.config.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "@playwright/test": "^1.44.0",
+    "@types/node": "^20.12.12",
+    "allure-playwright": "^2.15.1",
+    "dotenv": "^16.4.5"
+  }
+}
